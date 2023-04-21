@@ -61,7 +61,8 @@
   color: #0B2447;
   border: none;
   width: 100%;
-  background: #fff;
+  background: transparent;
+  z-index: 1;
 }
 
 .form .input_wrapper label {
@@ -71,6 +72,7 @@
   transform: translateY(-50%);
   user-select: none;
   transition: top 200ms ease;
+  z-index: 0;
 }
 
 .form .input_wrapper input:focus + label {
