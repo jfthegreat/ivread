@@ -1,0 +1,123 @@
+.form_wrapper {
+  max-width: 500px;
+  overflow: hidden;
+  margin-top: 150px;
+  padding: 20px;
+  border-radius: 8px;
+  margin-inline: auto;
+  position: relative;
+  box-shadow: 
+  rgba(0, 0, 0, 0.19) 0px 10px 20px, 
+  rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.greetings {
+  text-align: center;
+  user-select: none;
+}
+
+.greetings > h1 {
+  padding-top: 15px;
+  font-size: 25px;
+  color: #0B2447;
+}
+
+.greetings > span {
+  display: block;
+  font-size: 14px;
+  color: #7F8487;
+  padding-block: 10px;
+}
+
+.greetings .image {
+  height: 100px;
+  position: relative;
+}
+
+.greetings .image img {
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form .input_wrapper {
+  display: flex;
+  max-width: 350px;
+  margin-block: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  color: #7F8487;
+}
+
+.form .input_wrapper input {
+  padding-block: 15px;
+  border-radius: 5px;
+  outline: 1px solid #7F8487;
+  text-indent: 20px;
+  font-size: 16px;
+  color: #0B2447;
+  border: none;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+.form .input_wrapper label {
+  position: absolute;
+  margin-left: 20px;
+  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+  z-index: 0;
+  transition: top 200ms ease;
+}
+
+.form .input_wrapper input:focus + label {
+  top: 0;
+  background: #fff;
+  padding-inline: 5px;
+  color: #0B2447;
+  font-size: 12px;
+  z-index: 1;
+}
+
+
+.form .forgot_password {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.form .forgot_password a {
+  text-decoration: none;
+  color: #1363DF;
+}
+
+.form > .signin {
+  max-width: 350px;
+  outline: 1px solid black;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background: #0B2447;
+}
+
+.form > .signin input {
+  background: unset;
+  outline: unset;
+  border: unset;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
