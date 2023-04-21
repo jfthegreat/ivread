@@ -17,13 +17,13 @@ export default function LoginForm() {
         <h1>Hello there, Welcome!</h1>
         <span>Sign In to Continue</span>
       </div>
-      <form className={style.form}>
+      <form spellCheck={false} className={style.form}>
         <div className={style.input_wrapper}>
-          <input type="text" />
+          <input placeholder=" " type="text" />
           <label>Email Address</label>
         </div>
         <div className={style.input_wrapper}>
-          <input type="password" />
+          <input placeholder=" " type="password" />
           <label>Password</label>
         </div>
         <div className={style.forgot_password}>
